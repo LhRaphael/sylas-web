@@ -1,0 +1,19 @@
+{
+  "name": "projeto_ads_git",
+  "version": "1.0.0",
+  "description": "um projeto de faculdade",
+  "main": "script.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "os caba otario",
+  "license": "ISC",
+  "type": "module"
+}

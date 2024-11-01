@@ -1,0 +1,251 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* header components */
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    color: black;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+button{
+    background:none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+li{
+    display: block;
+    margin: auto;
+
+}
+
+img{
+    width: 25px;
+    height: 25px;
+
+}
+
+/* display */
+
+main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    background-color: darkslateblue;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+/* taskbar components */
+nav{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color:lightslategray;
+}
+
+nav > button{
+    display: block;
+    margin: auto 10px;
+}
+
+/* Components */
+
+/* --calculator */
+#calculator{
+    height: 90%;
+    width: 40%;
+    margin: auto;
+    padding: 1% 0%;
+    background-color: black;
+    border-radius: 8px;
+
+}
+
+#display-calculator{
+    height: 20%;
+    width: 100%;
+    text-align: end;
+}
+
+#up-display-calculator{
+    height: 60%;
+    width: 95%;
+    background-color: gray;
+    margin: auto;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 2em;
+}
+
+#down-display-calculator{
+    height: 40%;
+    width: 95%;
+    background-color:darkgrey;
+    margin: auto;
+    border-radius: 0px 0px 6px 6px;
+    font-size: 1.5em;
+
+}
+
+#buttons-calculator{
+    height: 80%;
+    width: 95%;
+    background-color:rgb(39, 39, 39);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#buttons-calculator > button{
+    font-size: 2em;
+}
+
+.buttons-calculator{
+    background-color: aliceblue;
+}
+
+.buttons-op-calculator{
+    background-color: orange;
+}
+
+/* --appbar */
+
+#appbar{
+    height: 100%;
+    width: 30%;
+    background-color: dimgray;
+    display: block;
+}
+
+#appbar > ul{
+    display: list-item;
+    padding: 0px;
+}
+
+#appbar li{
+    border-bottom: 2px solid white;
+}
+
+#appbar button{
+    width:100%;
+    text-align: left;
+    font-size: 1.2em;
+    border: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#appbar button:hover{
+    color: cornsilk;
+}
+
+/* --shell */
+
+#shell{
+    height: 90%;
+    width: 70%;
+    font-family: 'hack';
+    background-color: black;
+    margin: auto;
+    border: 4px solid green;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#shell label{
+    color:aqua;
+
+}
+
+#shell input{
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: none;
+    color: aliceblue;
+    font-size: 12pt;
+}
+
+#shell #files{
+    color: greenyellow;
+}
+
+#output-shell{
+    color:aliceblue;
+    font-size: 12pt;
+}
+
+#shell #efile{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+    margin: auto;
+    resize: none;
+    cursor:text;
+    border: none;
+}
+
+#shell #key-list-efile{
+    margin: 0;
+    color: aliceblue;
+    align-items: first baseline;
+
+}
+
+/* synet */
+
+#synet{
+    margin: auto;
+    width: 60%;
+    display: none;
+}
+
+#synet > :first-child{
+    background-color: wheat;
+    border: none;
+    
+}
+
+#synet .gsc-results-wrapper-overlay{
+    padding: 5px;
+    height: 70%;
+    top: 15%;
+}
+
+#synet .gsc-modal-background-image {
+    background: none;
+}
+
+#synet .gsc-results-close-btn-visible{
+    display: none;
+}
+
+/* elementos gerais * /
+
+/* --barra de rolagem */
+
+::-webkit-scrollbar{
+    opacity: 0; 
+}
