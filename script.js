@@ -5,6 +5,7 @@ import { Synet } from "./components/Synet.js"
 
 import { close } from "./components/crutch.js"
 
+
 // Fechar apps ao clicar no main
 const main = document.getElementById("main")
 main.addEventListener('dblclick', close)
