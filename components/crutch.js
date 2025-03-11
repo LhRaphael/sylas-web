@@ -20,8 +20,6 @@ export function login(){
 
 }
 
-
-
 //Onde os arquivos seram armazenados
 export var archives = []
 

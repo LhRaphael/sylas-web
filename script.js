@@ -1,3 +1,4 @@
+import { Settings } from "./components/Settings.js"
 import { Calculator } from "./components/Calculator.js"
 import { Appbar } from "./components/Appbar.js"
 import { Shell } from "./components/Shell.js"
@@ -9,6 +10,13 @@ import { close } from "./components/crutch.js"
 // Fechar apps ao clicar no main
 const main = document.getElementById("main")
 main.addEventListener('dblclick', close)
+
+//options
+const settings = new Settings("main")
+const settings_b = document.getElementById("settings")
+settings_b.addEventListener('click', ()=>{
+    settings.show()
+})
 
 // Calculadora
 const calculator = new Calculator("main") // Objeto calculadora
@@ -33,12 +41,13 @@ shell_b.addEventListener('click',()=>{
 
 // Função para carregar os objetos
 window.onload = function load() {
+    settings.init()
     calculator.init()
     app_bar.init()
     shell.init()
-
+    
     /* apps do menu de aplicativos */
-
+    
     // Buscador 
     const synet = new Synet("main")
     const synet_b = document.getElementById("synetb")
@@ -46,6 +55,6 @@ window.onload = function load() {
         app_bar.show()
         synet.show()
     })
-
+    
     synet.init()
 }
