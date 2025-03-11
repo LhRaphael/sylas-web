@@ -215,7 +215,7 @@ export class Shell {
                 break;
 
             default:
-                output.innerHTML = 'o comando "'+comand_line[0]+'" não foi encontrado'
+                output.innerHTML = 'comand not found: '+ comand_line[0]
                 break;
         }
 
@@ -280,10 +280,10 @@ export class Shell {
         .then(data => {
             const pages = data.query.pages
             const pageId = Object.keys(pages)[0]
-            return pages[pageId]?.extract || "Resumo não disponível."
+            return pages[pageId]?.extract || "abstract not available."
         })
         .catch(error => {
-          console.error("Erro ao buscar resumo:", error)
+          console.error("Error:", error)
         });
     }
 

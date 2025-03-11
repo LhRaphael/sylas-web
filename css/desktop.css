@@ -46,7 +46,7 @@ main{
     height: 80vh;
     width: 100vw;
     display: flex;
-    background-color: darkslateblue;
+    background-image: linear-gradient(to bottom, cyan, aquamarine, skyblue);
     overflow-y: hidden;
     overflow-x: hidden;
     background-size:cover;
@@ -59,15 +59,25 @@ nav{
     display: flex;
     height: 10vh;
     width: 100vw;
-    background-color:lightslategray;
+    background-color:lightblue;
+    box-shadow: inset 3px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav > button{
     display: block;
     margin: auto 10px;
+    border: none;
 }
 
 /* Components */
+
+#config{
+    height: 80%;
+    width: 50%;
+    margin: auto;
+    background-color: aliceblue;
+}
+
 
 /* --calculator */
 #calculator{
@@ -77,6 +87,7 @@ nav > button{
     padding: 1% 0%;
     background-color: black;
     border-radius: 8px;
+    transition: transform 1s ease;
 
 }
 
