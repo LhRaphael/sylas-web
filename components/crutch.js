@@ -23,6 +23,8 @@ export function login(){
 //Onde os arquivos seram armazenados
 export var archives = []
 
+export var rgbMain = [135, 206, 235]
+
 //Cria um novo elemento html
 export function create(tag) {
     return document.createElement(tag)
