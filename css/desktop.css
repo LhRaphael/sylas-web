@@ -46,7 +46,7 @@ main{
     height: 80vh;
     width: 100vw;
     display: flex;
-    background-image: linear-gradient(to bottom, cyan, aquamarine, skyblue);
+    background-image: linear-gradient(to bottom, cyan, aquamarine, rgb(135, 206, 235));
     overflow-y: hidden;
     overflow-x: hidden;
     background-size:cover;
@@ -71,13 +71,50 @@ nav > button{
 
 /* Components */
 
+ /* --settings-- */
 #config{
     height: 80%;
     width: 50%;
     margin: auto;
     background-color: aliceblue;
+    border-radius: 8px;
+    border: 3px solid gainsboro;
+    padding: 3px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+#background-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#background-text{
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#background-range-list{
+    display:grid;
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#background-red-range{
+    background: red;
+}
+
+#background-green-range{
+    background: green;
+}
+
+#background-blue-range{
+    background: blue;
+}
 
 /* --calculator */
 #calculator{
